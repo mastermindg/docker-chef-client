@@ -9,7 +9,7 @@ MAINTAINER Ken Jenney <me@kenjenney.com>
 
 RUN yum -y update
 RUN yum -y install curl 
-RUN curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.1.1-1
+RUN curl -L https://www.chef.io/chef/install.sh | bash -s -- -v 12.1.1-1
 RUN yum clean all
 
 # Make Chef available as a volume
