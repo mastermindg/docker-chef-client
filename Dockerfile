@@ -2,7 +2,7 @@
 #
 # https://www.chef.io/download-chef-client/
 #
-# Start from Ubuntu 14.04.2 Docker images
+# Start from Ubuntu 14.04 Docker images
 FROM ubuntu:14.04.2
 
 MAINTAINER Ken Jenney <me@kenjenney.com>
