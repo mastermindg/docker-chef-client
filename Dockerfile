@@ -2,7 +2,6 @@
 #
 # https://www.chef.io/download-chef-client/
 #
-# Start from Ubuntu 14.04.2 Docker images
 FROM centos:7
 
 MAINTAINER Ken Jenney <me@kenjenney.com>
