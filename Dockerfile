@@ -3,14 +3,14 @@
 # https://www.chef.io/download-chef-client/
 #
 # Start from Ubuntu 14.04.2 Docker images
-FROM ubuntu:14.04.2
+FROM centos:7
 
 MAINTAINER Ken Jenney <me@kenjenney.com>
 
-RUN apt-get -yqq update
-RUN apt-get -yqq install curl lsb-release
+RUN yum -y update
+RUN yum -y install curl 
 RUN curl -L https://www.chef.io/chef/install.sh | sudo bash -s -- -v 12.1.1-1
-RUN apt-get -yqq clean
+RUN yum clean all
 
 # Make Chef available as a volume
 VOLUME /opt/chef
